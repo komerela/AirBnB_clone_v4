@@ -10,7 +10,7 @@
 
     <!-- IMPORT JQUERY -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
 
 
     <!-- IMPORT JAVA SCRIPT FILE FROM static/scripts/1-hbnb.js -->
@@ -25,7 +25,7 @@
 	 CSS styles
 	 ********************** -->
 
-	 <link rel="stylesheet" href="{{ url_for('static', filename='styles/4-common.css') }}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/4-common.css') }}?{{ cache_id }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/3-header.css') }}?{{ cache_id }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/3-footer.css') }}?{{ cache_id }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/6-filters.css') }}?{{ cache_id }}">
@@ -84,8 +84,8 @@
 	      {% for amenity in amens|sort(attribute='name') %}
 	      <LI>
 		<input type="checkbox" style="margin-right:10px;" data-id={{ amenity.id }} data-name='{{ amenity.name }}'/>
-
-		      {{ amenity.name }}</LI>
+		{{ amenity.name }}
+	      </LI>
 	      {% endfor %}
 	    </ul>
 	  </div>
